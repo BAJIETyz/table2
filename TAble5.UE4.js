@@ -1133,7 +1133,7 @@ $(document).ready(function() {
 				return { db: db, wasmBytes: wasmBytes, fromIndexedDB: true };
 			});
 		}).catch(function() {
-			return download(Module.locateFile('https://dl.dropboxusercontent.com/s/ox8e45nuziwr9bk/UE4Game.wasm?dl=0'), 'arraybuffer').then(function(wasmBytes) {
+			return download(Module.locateFile('https://dl.dropboxusercontent.com/ox8e45nuziwr9bk/UE4Game.wasm?dl=0/s/ox8e45nuziwr9bk/UE4Game.wasm?dl=0'), 'arraybuffer').then(function(wasmBytes) {
 				return { db: db, wasmBytes: wasmBytes, fromIndexedDB: false };
 			});
 		});
@@ -1167,7 +1167,7 @@ $(document).ready(function() {
 			});
 */
 // Instead as a fallback, download as ArrayBuffer. (TODO: Figure out the bugs with the above, and switch to using that one instead)
-			fetchOrDownloadAndStore(db, Module.locateFile('https://dl.dropboxusercontent.com/ox8e45nuziwr9bk/UE4Game.wasm?dl=0/s/ox8e45nuziwr9bk/UE4Game.wasm?dl=0'), 'arraybuffer').then(function(dataArrayBuffer) {
+			fetchOrDownloadAndStore(db, Module.locateFile('https://dl.dropboxusercontent.com/s/fjr0l1k2xozpi29/TAble5.data?dl=0'), 'arraybuffer').then(function(dataArrayBuffer) {
 				Module['preloadedPackages'] = {};
 				Module['preloadedPackages'][Module.locateFile('https://dl.dropboxusercontent.com/s/fjr0l1k2xozpi29/TAble5.data?dl=0')] = dataArrayBuffer;
 				return dataJsDownload.then(addScriptToDom);
