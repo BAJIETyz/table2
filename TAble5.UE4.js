@@ -1154,8 +1154,8 @@ $(document).ready(function() {
 
 		// ----------------------------------------
 		// MORE JS
-		var dataJsDownload = fetchOrDownloadAndStore(db, Module.locateFile('https://rawcdn.githack.com/BAJIETyz/table2/5a59304dfaeb124fb3660169fd34c7d0dd8a7ecc/TAble5.data.js'));
-		var utilityJsDownload = fetchOrDownloadAndStore(db, Module.locateFile('https://rawcdn.githack.com/BAJIETyz/table2/5a59304dfaeb124fb3660169fd34c7d0dd8a7ecc/Utility.js')).then(addScriptToDom);
+		var dataJsDownload = fetchOrDownloadAndStore(db, Module.locateFile('https://rawcdn.githack.com/BAJIETyz/table2/426da4a77209ac5e3b7b254e571d9576e0f84ad6/TAble5.data.js'));
+		var utilityJsDownload = fetchOrDownloadAndStore(db, Module.locateFile('https://rawcdn.githack.com/BAJIETyz/table2/426da4a77209ac5e3b7b254e571d9576e0f84ad6/Utility.js')).then(addScriptToDom);
 		var dataDownload =
 /* // The following code would download and store the .data file as a Blob, which should be more efficient than loading an ArrayBuffer. However that seems to be buggy, so avoid it for now.
 			fetchOrDownloadAndStore(db, Module.locateFile('TAble5.data')).then(function(dataBlob) {
